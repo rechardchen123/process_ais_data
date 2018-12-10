@@ -1,7 +1,7 @@
 import os
 import operator
 
-directory = r'D:\Data store file\groupby-ais-file'  # 需要修改的工作目录
+directory = r'C:\Users\LPT-ucesxc0\AIS-Data\AIS-data-after-day-split'  # 需要修改的工作目录
 os.chdir(directory)  # 改变当前工作目录
 cwd = os.getcwd()  # 查看当前工作目录
 print("--------------current working directory : " + cwd + "----------")
@@ -9,7 +9,6 @@ print("--------------current working directory : " + cwd + "----------")
 
 def deleteBySize(minSize):
     '''
-
     :param minSize:
     :return:删除指定大小的文件
     '''
