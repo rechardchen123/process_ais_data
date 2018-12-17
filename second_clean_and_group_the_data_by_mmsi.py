@@ -30,7 +30,7 @@ print('total MMSI number is: ', count_MMSI)  # count_MMSI = 1746 表明有1746�
 trajectory_process['Record_Datetime'] = pd.to_datetime(trajectory_process['Record_Datetime'])
 
 #得到MMSI列表，去除重复的MMSI数据
-finish_drop = trajectory_process.drop(columns=['Direction','Heading'])
+finish_drop = trajectory_process.drop(columns=['Heading'])
 
 #按照MMSI输出数据
 df1 = finish_drop.groupby(['MMSI'])
